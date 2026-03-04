@@ -9,61 +9,61 @@ def health():
 @api.route('/todos',methods=['GET'])
 def get_todos():
     return jsonify([{
-        "id":1,
-        "description":"learning CSSE6400",
-        "title":"CSSE6400 prac 1",
-        "completed":True,
-        "deadline_at": "2026-02-27T18:00:00", 
-     "created_at": "2026-02-20T14:00:00", 
-    "updated_at": "2026-02-20T14:00:00" 
+            "id": id,
+            "title": "Watch CSSE6400 Lecture",
+            "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
+            "completed": True,
+            "deadline_at": "2026-02-27T18:00:00",
+            "created_at": "2026-02-20T14:00:00",
+            "updated_at": "2026-02-20T14:00:00"
     }])
 
 @api.route('/todos/<int:id>',methods=['GET'])
 def get_todo_by_id(id):
     return jsonify({
-        "id":id,
-        "description":"learning CSSE6400",
-        "title":"CSSE6400 prac 1",
-        "completed":True,
-        "deadline_at": "2026-02-27T18:00:00", 
-     "created_at": "2026-02-20T14:00:00", 
-    "updated_at": "2026-02-20T14:00:00" 
+            "id": id,
+            "title": "Watch CSSE6400 Lecture",
+            "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
+            "completed": True,
+            "deadline_at": "2026-02-27T18:00:00",
+            "created_at": "2026-02-20T14:00:00",
+            "updated_at": "2026-02-20T14:00:00"
     })
 
 
 @api.route('/todos',methods=['POST'])
 def create_todo():
         return jsonify({
-        "id":1,
-        "description":"learning CSSE6400",
-        "title":"CSSE6400 prac 1",
-        "completed":True,
-        "deadline_at": "2026-02-27T18:00:00", 
-     "created_at": "2026-02-20T14:00:00", 
-    "updated_at": "2026-02-20T14:00:00" 
+            "id": 1,
+            "title": "Watch CSSE6400 Lecture",
+            "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
+            "completed": True,
+            "deadline_at": "2026-02-27T18:00:00",
+            "created_at": "2026-02-20T14:00:00",
+            "updated_at": "2026-02-20T14:00:00"
     }),201
 
 @api.route('todos/<int:id>',methods=['PUT'])
 def update_todo(id):
      return jsonify({
-        "id":id,
-        "description":"learning CSSE6400",
-        "title":"CSSE6400 prac 1",
-        "completed":True,
-        "deadline_at": "2026-02-27T18:00:00", 
-     "created_at": "2026-02-20T14:00:00", 
-    "updated_at": "2026-02-20T14:00:00" 
+            "id": id,
+            "title": "Watch CSSE6400 Lecture",
+            "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
+            "completed": True,
+            "deadline_at": "2026-02-27T18:00:00",
+            "created_at": "2026-02-20T14:00:00",
+            "updated_at": "2026-02-20T14:00:00"
     })
 
 @api.route('todos/<int:id>',methods=['DELETE'])
 def delete_todo(id):
      return jsonify({
-        "id":id,
-        "description":"learning CSSE6400",
-        "title":"CSSE6400 prac 1",
-        "completed":True,
-        "deadline_at": "2026-02-27T18:00:00", 
-     "created_at": "2026-02-20T14:00:00", 
-    "updated_at": "2026-02-20T14:00:00" 
+            "id": id,
+            "title": "Watch CSSE6400 Lecture",
+            "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
+            "completed": True,
+            "deadline_at": "2026-02-27T18:00:00",
+            "created_at": "2026-02-20T14:00:00",
+            "updated_at": "2026-02-20T14:00:00"
     })
      
