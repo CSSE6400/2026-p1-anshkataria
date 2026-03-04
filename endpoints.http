@@ -1,4 +1,28 @@
  @baseUrl = http://127.0.0.1:6400 
 
 ### Health
-GET {{{{baseUrl}}}}/api/v1/health
+GET {{baseUrl}}/api/v1/health
+
+### List all todo
+GET {{baseUrl}}/api/v1/todos
+
+### Get a specific todo
+GET {{baseUrl}}/api/v1/todos/1
+
+### Create a todo
+POST {{baseUrl}}/api/v1/todos
+Content-Type: application/json
+{
+    "title": "My Example todo",
+    "description": "Learning how to use rest client",
+}
+
+### Update a todo
+PUT {{baseUrl}}/api/v1/todos/1
+Content-Type: application/json
+{
+    "title":"updating using PUT http method",
+}
+
+### Delete a todo
+DELETE {{baseUrl}}/api/v1/todos/1
