@@ -12,6 +12,7 @@ GET {{baseUrl}}/api/v1/todos/1
 ### Create a todo
 POST {{baseUrl}}/api/v1/todos
 Content-Type: application/json
+
 {
     "title": "My Example todo",
     "description": "Learning how to use rest client",
@@ -20,6 +21,7 @@ Content-Type: application/json
 ### Update a todo
 PUT {{baseUrl}}/api/v1/todos/1
 Content-Type: application/json
+
 {
     "title":"updating using PUT http method",
 }
