@@ -9,7 +9,7 @@ def health():
 @api.route('/todos',methods=['GET'])
 def get_todos():
     return jsonify([{
-            "id": id,
+            "id": 1,
             "title": "Watch CSSE6400 Lecture",
             "description": "Watch the CSSE6400 lecture on ECHO360 for week 1",
             "completed": True,
