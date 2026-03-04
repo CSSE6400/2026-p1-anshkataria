@@ -18,3 +18,14 @@ def get_todos():
     "updated_at": "2026-02-20T14:00:00" 
     }])
 
+@api.route('/todos/<int:id>',methods=['GET'])
+def get_todo_by_id(id):
+    return jsonify([{
+        "id":id,
+        "description":"learning CSSE6400",
+        "title":"CSSE6400 prac 1",
+        "completed":True,
+        "deadline_at": "2026-02-27T18:00:00", 
+     "created_at": "2026-02-20T14:00:00", 
+    "updated_at": "2026-02-20T14:00:00" 
+    }])
