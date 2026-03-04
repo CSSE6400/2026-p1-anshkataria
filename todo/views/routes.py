@@ -6,6 +6,15 @@ api =  Blueprint('api', __name__,url_prefix='/api/v1')
 def health():
     return jsonify({"status":"ok"})
 
-@api.route('/todos')
+@api.route('/todos',methods=['GET'])
 def get_todos():
-    return jsonify([])
+    return jsonify([{
+        "id":1,
+        "description":"learning CSSE6400",
+        "title":"CSSE6400 prac 1",
+        "completed":True,
+        "deadline_at": "2026-02-27T18:00:00", 
+     "created_at": "2026-02-20T14:00:00", 
+    "updated_at": "2026-02-20T14:00:00" 
+    }])
+
